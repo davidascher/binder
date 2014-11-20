@@ -1,0 +1,24 @@
+
+
+<header class="site-header">
+  <nav class="navbar navbar-inverse navbar-no-header-xs">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" scroll-to="" href="{{site.baseurl}}">{{ site.title }}</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            {% for page in site.pages %}
+            <li>
+              <a href="{{page.url | prepend: site.baseurl }}"><span class="fa"></span> {{page.title}}</a>
+            </li>
+            {% endfor %}
+        </ul> 
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://prose.io/#davidascher/binder/edit/master/{{page.path}}"><span class="fa"></span>edit</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
