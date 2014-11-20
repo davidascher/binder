@@ -10,8 +10,9 @@ markdown: kramdown
 permalink: pretty
 
 prose:
-  metadata:
-    "_posts":
-      - name: "Useful"
-        field:
-          element: "checkbox"
+ metadata:
+  _posts:
+    - name: "title"
+      field:
+        element: "text"
+        label: "title"
