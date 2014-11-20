@@ -11,8 +11,8 @@ permalink: pretty
 
 prose:
   metadata:
-    "":
-      - name: "title"
+    "_posts":
+      - name: "Title"
         field:
           element: "text"
           label: "foo"
