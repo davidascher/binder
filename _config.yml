@@ -9,6 +9,13 @@ url: "http://yourdomain.com"
 markdown: kramdown
 permalink: pretty
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+
 prose:
  metadata:
   _tabs:
