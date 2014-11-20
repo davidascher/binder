@@ -12,10 +12,6 @@ permalink: pretty
 prose:
   metadata:
     "_posts":
-      - name: "Title"
-        field:
-          element: "text"
-          label: "foo"
       - name: "Useful"
         field:
           element: "checkbox"
