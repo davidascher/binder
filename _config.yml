@@ -15,11 +15,3 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "page"
-
-prose:
- metadata:
-  _tabs:
-    - name: "title"
-      field:
-        element: "text"
-        label: "title"
