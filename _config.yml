@@ -8,3 +8,16 @@ url: "http://yourdomain.com"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+prose:
+	metadata:
+		- name: "layout"
+			field:
+			element: "hidden"
+			value: "page"
+        - name: "title"
+			field:
+			element: "text"
+			label: "Title"
+			value: ""
+			type: "text"
