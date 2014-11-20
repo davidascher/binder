@@ -9,9 +9,11 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
             {% for page in site.pages %}
+          {% if page.title %}
             <li>
               <a href="{{page.url | prepend: site.baseurl }}"><span class="fa"></span> {{page.title}}</a>
             </li>
+          {% endif %}
             {% endfor %}
         </ul> 
         <ul class="nav navbar-nav navbar-right">
