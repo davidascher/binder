@@ -1,0 +1,32 @@
+sprints:
+  - name: Before Portland
+    start_date: 2014-11-11
+    end_date: 2014-11-28
+    initiatives:
+      - name: Make webmaker app ready for portland
+        lead: Andrew
+        priority: 1
+        github_link: http://github/...
+      - name: EOY 
+        lead: Andrea
+        bugzilla_link: http://bugzilla/...
+        priority: 1
+      - name: build.webmaker.org 
+        lead: Cassie
+        bugzilla_link: http://bugzilla/...
+        priority: 2
+
+  - name: Mozlandia
+    start_date: 2014-12-6
+    end_date: 2014-12-1
+    initiatives:
+      - name: EOY final sprint 
+        lead: Andrea
+        bugzilla_link: http://bugzilla/...
+        priority: 1
+      - name: Make webmaker app amazing
+        lead: Andrew
+        github_link: http://github/...
+        priority: 2
+
+
