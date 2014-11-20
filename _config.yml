@@ -16,3 +16,6 @@ prose:
         field:
           element: "text"
           label: "foo"
+      - name: "Useful"
+        field:
+          element: "checkbox"
