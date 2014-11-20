@@ -15,4 +15,4 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "title"
+          label: "foo"
