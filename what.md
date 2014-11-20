@@ -1,6 +1,7 @@
 ---
 layout: page
-title: What
+title: "What we're building"
+published: true
 ---
 
 ## What we're building
