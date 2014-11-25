@@ -34,7 +34,7 @@ prose:
       - name: "layout"
         field:
           label: "Jekyll layout"
-          element: "hidden"
+          element: "text"
           value: "initiative"
       - name: "lead"
         field:
