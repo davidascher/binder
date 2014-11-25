@@ -1,24 +1,51 @@
 # Site settings
 title: The Binder
-email: your-email@domain.com
+email: da@mozillafoundation.org
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: "http://ideas.ascher.ca/binder"
-url: ""
+baseurl: /binder"
+# url: ""
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+collections: 
+  sprints:
+    output: true
+  initiatives:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: "initiatives"
+      type: "posts"
+    values:
+      layout: "initiative"
+  -
+    scope:
+      path: "sprints"
+      type: "posts"
+    values:
+      layout: "sprint"
 
 prose:
   metadata:
     initiatives:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "initiative"
       - name: "lead"
         field:
           element: "text"
           label: "Who's leading"
+          value: "no-one"
+      - name: "team"
+        field:
+          element: "text"
+          label: "Who's on the team"
+          value: "no-one"
+      - name: "bugs"
+        field:
+          element: "text"
+          label: "Bug link (github, bugzilla)"
+          value: "https://"
+
 
 

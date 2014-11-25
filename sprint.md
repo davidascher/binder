@@ -3,18 +3,14 @@ title: Sprints
 layout: page
 ---
 
-<ul>
-{% for sprint in site.data.allsprints.sprints %}
-  <li> {{sprint.name}}
-  <ul>
-   {% for initiative in sprint.initiatives %}
-   <li>
-   	  P{{ initiative.priority }}: 
-      {{ initiative.name }} (led by 
-      {{ initiative.lead }})
-  </li>
-   {% endfor %}
-  </ul>
-  </li>
+{% for sprint in site.sprints | sort: end_date %}
+### {{sprint.title}} (ends on {{sprint.end_date}})
+{% for initiative in sprint.initiatives %}
+{% for blob in site.initiatives %}
+{% if blob.slug == initiative && sprint.%}
+* [{{ blob.title }}](/initiatives/{{ blob.slug }}.html) (led by {{ blob.lead }})
+{% endif %}
 {% endfor %}
-</ul>
+{% endfor %}
+{% endfor %}
+
