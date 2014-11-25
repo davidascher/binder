@@ -30,22 +30,23 @@ defaults:
 
 prose:
   metadata:
-    initiatives:
-      - name: "lead"
-        field:
-          element: "text"
-          label: "Who's leading"
-          value: "no-one"
-      - name: "team"
-        field:
-          element: "text"
-          label: "Who's on the team"
-          value: "no-one"
-      - name: "bugs"
-        field:
-          element: "text"
-          label: "Bug link (github, bugzilla)"
-          value: "https://"
+    _posts:
+      _initiatives:
+        - name: "lead"
+          field:
+            element: "text"
+            label: "Who's leading"
+            value: "no-one"
+        - name: "team"
+          field:
+            element: "text"
+            label: "Who's on the team"
+            value: "no-one"
+        - name: "bugs"
+          field:
+            element: "text"
+            label: "Bug link (github, bugzilla)"
+            value: "https://"
 
 
 
