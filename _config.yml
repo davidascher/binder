@@ -30,7 +30,11 @@ defaults:
 
 prose:
   metadata:
-    _posts/_initiatives:
+    _initiatives:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "initiative"
       - name: "lead"
         field:
           element: "text"
