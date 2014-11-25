@@ -15,7 +15,7 @@ layout: default
 <ul>
 {% for blob in site.initiatives %}
 {% if blob.slug == initiative %}
-<li><a href="/initiatives/{{ blob.slug }}.html">{{ blob.title }}</a> (led by {{ blob.lead }})</li>
+<li><a href="{{site.baseurl}}/initiatives/{{ blob.slug }}.html">{{ blob.title }}</a> (led by {{ blob.lead }})</li>
 {% endif %}
 {% endfor %}
 </ul>

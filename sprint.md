@@ -8,7 +8,7 @@ layout: page
 {% for initiative in sprint.initiatives %}
 {% for blob in site.initiatives %}
 {% if blob.slug == initiative && sprint.%}
-* [{{ blob.title }}](/initiatives/{{ blob.slug }}.html) (led by {{ blob.lead }})
+* [{{ blob.title }}]({{site.baseurl}}/initiatives/{{ blob.slug }}.html) (led by {{ blob.lead }})
 {% endif %}
 {% endfor %}
 {% endfor %}
