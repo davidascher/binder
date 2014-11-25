@@ -31,6 +31,10 @@ defaults:
 prose:
   metadata:
     _initiatives:
+      - name: "title"
+        field:
+          label: "Initiative Title"
+          element: "text"
       - name: "layout"
         field:
           label: "Jekyll layout"
