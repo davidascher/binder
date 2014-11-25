@@ -31,6 +31,10 @@ defaults:
 prose:
   metadata:
     _initiatives:
+      - name: "content"
+        field:
+          element: "text"
+          value: "initiative"
       - name: "layout"
         field:
           element: "hidden"
@@ -40,6 +44,10 @@ prose:
           element: "text"
           label: "Who's leading"
           value: "no-one"
+      - name: "slug"
+        field:
+          element: "text"
+          label: "slug (no spaces)"
       - name: "team"
         field:
           element: "text"
