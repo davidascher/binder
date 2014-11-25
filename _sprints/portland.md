@@ -6,4 +6,4 @@ end_date: 2014-12-6
 initiatives: ['app-amazing', 'eoy']
 ---
 
-App Amazing
+Wherein we get ready to kick ass for Mozlandia

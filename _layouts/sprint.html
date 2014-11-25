@@ -26,4 +26,11 @@ layout: default
   {{ content }}
   </article>
 
+  {% assign bits = page.url | split: '/' %}
+  {% assign subbits = bits.last | split: '.html' %}
+  {% assign slug = subbits.last %}
+  <div class="text-right">
+  <a class="btn btn-secondary" href="http://prose.io/#davidascher/binder/edit/gh-pages/_sprints/{{slug}}.md">Edit this sprint</a>
+  </div>
+
 </div>
