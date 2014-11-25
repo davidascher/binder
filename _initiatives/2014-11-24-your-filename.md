@@ -4,6 +4,7 @@ published: false
 lead: OpenMatt
 team: Everyone
 bugs: "https://"
+title: This is a better title
 ---
 
 ## A New Post
