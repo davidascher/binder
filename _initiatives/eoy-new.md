@@ -1,9 +1,8 @@
 ---
-title: Tuning EOY
+title: 2015 EOY
 layout: initiative
-slug: eoy
+slug: eoy-postfinal
 lead: andrea
-lead: kate
 team: andrew, pomax, scott, aki
 bugs: https://github.com/mozillafordevelopment/webmaker-app/milestones/Work%20Week
 ---

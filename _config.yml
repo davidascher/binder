@@ -31,12 +31,9 @@ defaults:
 prose:
   metadata:
     _initiatives:
-      - name: "content"
-        field:
-          element: "text"
-          value: "initiative"
       - name: "layout"
         field:
+          label: "Jekyll layout"
           element: "hidden"
           value: "initiative"
       - name: "lead"

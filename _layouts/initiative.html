@@ -7,12 +7,16 @@ layout: default
     <h1>Initiative: {{ page.title }}</h1>
     <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
-  {{page}}
-  <a href="http://prose.io/#davidascher/binder/edit/gh-pages/_initiatives/{{page.slug}}.md">Edit this initiative</a>
+
+
+  <div class="lead-header">Lead: <span class="lead-label">{{page.lead}}</span></div>
+  <div class="team-header">Team: <span class="team-label">{{page.team}}</span></div>
+  <div class="bugs-header">Bugs: <span class="bugs-label"><a href="{{page.bugs}}">Bugs</a></span></div>
 
 
   <article class="post-content">
   {{ content }}
   </article>
 
+  <a href="http://prose.io/#davidascher/binder/edit/gh-pages/_initiatives/{{page.slug}}.md">Edit this initiative</a>
 </div>
