@@ -30,6 +30,24 @@ defaults:
 
 prose:
   metadata:
+    _sprints:
+      - name: "title"
+        field:
+          label: "Sprint Title"
+          element: "text"
+      - name: "layout"
+        field:
+          label: "Jekyll layout"
+          element: "hidden"
+          value: "sprint"
+      - name: "start_date"
+        field:
+          element: "text"
+          label: "Start date (Y-M-D)"
+      - name: "end_date"
+        field:
+          element: "text"
+          label: "End date (Y-M-D)"
     _initiatives:
       - name: "title"
         field:
