@@ -37,7 +37,12 @@ layout: page
 {% endfor %}
 {% if mapped == false %}
 <li>
-<a href="{{site.baseurl}}{{initiative.url}}">{{ initiative.title }}</a> (led by {{ initiative.lead }})
+{% if initiative.title %}
+{% assign title = initiative.title %}
+{% else %}
+{% assign title = "untitled" %} 
+{% endif %}
+<a href="{{site.baseurl}}{{initiative.url}}">{{ title }}</a> (led by {{ initiative.lead }})
 {% endif %}
 </ul>
 {% endfor %}

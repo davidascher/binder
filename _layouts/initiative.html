@@ -29,6 +29,10 @@ layout: default
   <article class="post-content">
   {{ content }}
   </article>
-
-  <a href="http://prose.io/#davidascher/binder/edit/gh-pages/_initiatives/{{page.slug}}.md">Edit this initiative</a>
+  {% assign bits = page.url | split: '/' %}
+  {% assign subbits = bits.last | split: '.html' %}
+  {% assign slug = subbits.last %}
+  <div class="text-right">
+  <a class="btn btn-secondary" href="http://prose.io/#davidascher/binder/edit/gh-pages/_initiatives/{{slug}}.md">Edit this initiative</a>
+  </div>
 </div>
