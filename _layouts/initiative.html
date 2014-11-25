@@ -8,10 +8,22 @@ layout: default
     <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-
-  <div class="lead-header">Lead: <span class="lead-label">{{page.lead}}</span></div>
-  <div class="team-header">Team: <span class="team-label">{{page.team}}</span></div>
-  <div class="bugs-header">Bugs: <span class="bugs-label"><a href="{{page.bugs}}">Bugs</a></span></div>
+<table class="table">
+<tbody>
+<tr>
+	<th class="text-right">Lead</th>
+	<td>{{page.lead}}</td>
+</tr>
+<tr>
+	<th class="text-right">Team</th>
+	<td>{{page.team}}</td>
+</tr>
+<tr>
+	<th class="text-right">Bugz</th>
+	<td><a href="{{page.bugs}}">Bugs</a></span></td>
+</tr>
+</tbody>
+</table>
 
 
   <article class="post-content">

@@ -4,7 +4,7 @@ layout: page
 ---
 
 {% for sprint in site.sprints | sort: end_date %}
-<h3><a href="{{site.baseurl}}{{ sprint.url }}">{{sprint.title}}</a> (ends on {{sprint.end_date}}</h3>
+<h3><a href="{{site.baseurl}}{{ sprint.url }}">{{sprint.title}}</a> (ends on {{sprint.end_date}})</h3>
 <ul>
 {% for initiative in sprint.initiatives %}
 {% for blob in site.initiatives %}
@@ -12,7 +12,7 @@ layout: page
 {% assign path = bits.last | split: '.md' %}
 {% if path[0] == initiative %}
 <li>
-<a href="{{site.baseurl}}{{blob.url}}">{{ blob.title }}</a> (led by {{ blob.lead }}
+<a href="{{site.baseurl}}{{blob.url}}">{{ blob.title }}</a> (led by {{ blob.lead }})
 </li>
 {% endif %}
 {% endfor %}
@@ -42,5 +42,4 @@ layout: page
 </ul>
 {% endfor %}
 
-<h3>Kickstart a new initiative:</h3>
-<div class="button"><a href="http://prose.io/#davidascher/binder/new/gh-pages/_initiatives/">start new initiative</a></div>
+<h3>Kickstart a new initiative: <a class="btn btn-primary" href="http://prose.io/#davidascher/binder/new/gh-pages/_initiatives/">start new initiative (remember the metadata)</a></h3>
